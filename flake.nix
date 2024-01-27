@@ -1,7 +1,7 @@
 {
   description = "A very basic flake";
 
-  inputs.flake-utils.url = "github:numtide/flake-utils";
+  # inputs.flake-utils.url = "github:numtide/flake-utils";
 
   outputs = { self, flake-utils, nixpkgs }:
     flake-utils.lib.eachSystem ["x86_64-linux" "aarch64-darwin" ] (system:
